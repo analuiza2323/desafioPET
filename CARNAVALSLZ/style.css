@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;  /* Define a fonte*/
+    margin: 0; /* Remove as margens */
+    padding: 0; /* Remove o preenchimento interno*/
+    background-color: #188b36;  /*cor de fundo*/
+   
+}
+
+header {
+    background: #eaedec; /*cor de fundo do cabeçalho*/
+    padding: 15px; /*preenche*/
+    text-align: center; /* centraliza o texto*/
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /*sombra*/
+    
+}
+
+nav a {
+    margin: 0 15px; /*adiciona margem*/
+    color: black; /*cor dos links*/
+    text-decoration: none; /*remove o link*/
+    font-weight: bold; /*negrito*/
+    font-size: 16px; /*tamanho da fonte*/
+    transition: color 0.3s ease; /*faz a mudança de cor ao passar o mause nos links*/
+}
+
+nav a:hover {
+    color: #008000; /*cor da mudança dos links*/
+}
+
+.banner img {
+    width: 100%; /* Faz a imagem do banner ocupar 100% da largura disponível */
+    height: auto; /*altura da imagem*/
+    display: block; /*define a imagem como bloco para evitar espaços indesejaveis*/
+}
+
+.login-container, .sobre-container, .localizacao-container {
+    text-align: center;
+    padding: 90px;  /* Desce o texto */
+    max-width: 800px;/*limita os container*/
+    margin: 0 auto; /* Centraliza os contêineres */
+}
+
+.login-container form {
+    display: flex; /*organiza elementos*/
+    flex-direction: column; /*alinha o formulário*/
+    align-items: center;
+    gap: 15px; /*espaços entre os elenmntos */
+}
+
+.login-container input {
+    padding: 10px;  /*preenchimento interno*/
+    width: 100%;    /*input ocupar 100% da largura disponivel*/
+    max-width: 300px; /* Limita a largura máxima dos inputs a 300px */
+    border: 1px solid #ccc; /*borda*/
+    border-radius: 5px; /*arredonda os cantos*/
+}
+
+.login-container button {
+    padding: 10px 20px; /*preenchimento interno vertical e horizontal*/
+    background-color: #004d00;  /*cor do botão*/
+    color: white; /*cor do texto*/
+    border: none; /*remove borda do botão*/
+    border-radius: 5px; /*arredonda as bordas do botão com um raio*/
+    cursor: pointer; /*muda o mouse*/
+    transition: background-color 0.3s ease; 
+}
+
+.login-container button:hover {
+    background-color: #003300; /*muda a cor do botão */
+}
+
+.programacao-container {
+    max-width: 400px; /* largura do  retângulos */
+    margin: 20px auto; /* distancia do cabeçario para o primeiro retângulo */
+    padding: 20px;
+}
+.programacao-item {
+    margin-bottom: 30px; /* Espaço entre os retângulos */
+    text-align: center;
+    border: 2px solid #333; /* Borda do retângulo */
+    border-radius: 15px; /* Bordas arredondadas */
+    padding: 20px; /* Espaço interno */
+    background-color: #f9f9f9; /* Fundo claro para destacar */
+}
+.programacao-item h3 {
+    color: #333;
+    margin-bottom: 10px;  /* distancia entre a data e a programação*/
+}
+.programacao-item p {
+    margin: 5px 0;  /* distancia entre os paragrafos */
+}
